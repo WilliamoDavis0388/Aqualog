@@ -51,7 +51,6 @@ struct NewTankView: View {
             Form {
                 TextField("Tank name", text: $name)
                 TextField("Volume in gallons", text: $gallons)
-                    .keyboardType(.decimalPad)
                 Picker("Water type", selection: $waterType) {
                     ForEach(WaterType.allCases) { type in
                         Text(type.rawValue.capitalized).tag(type)
@@ -102,8 +101,7 @@ struct TankDetailView: View {
                             }
                         }
                         TextField("Measured value", text: $readingInput)
-                            .keyboardType(.decimalPad)
-                        Button("Save reading") {
+                                Button("Save reading") {
                             if let value = Double(readingInput), value >= 0 {
                                 store.addReading(to: tankID, parameter: selectedParameter, value: value)
                                 readingInput = ""
