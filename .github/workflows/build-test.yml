@@ -1,0 +1,41 @@
+name: Build and test AquaLog
+
+on:
+  push:
+    branches:
+      - feature/animal-fit-score
+  pull_request:
+
+jobs:
+  python-fit-score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Fit Score unit tests
+        run: python -m unittest fit_score.test_engine -v
+
+  swiftui-build:
+    runs-on: macos-15
+    strategy:
+      fail-fast: false
+      matrix:
+        destination:
+          - 'generic/platform=iOS Simulator'
+          - 'platform=macOS'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install XcodeGen
+        run: brew install xcodegen
+      - name: Generate Xcode project
+        run: xcodegen generate
+      - name: Build AquaLog app
+        run: |
+          if [[ "${{ matrix.destination }}" == "platform=macOS" ]]; then
+            SCHEME=AquaLogMac
+          else
+            SCHEME=AquaLog
+          fi
+          xcodebuild -project AquaLog.xcodeproj -scheme "$SCHEME" -destination "${{ matrix.destination }}" CODE_SIGNING_ALLOWED=NO build

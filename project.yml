@@ -1,0 +1,26 @@
+name: AquaLog
+options:
+  bundleIdPrefix: com.aqualog
+targets:
+  AquaLog:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources: [AquaLog]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.aqualog.app
+        SWIFT_VERSION: "5.9"
+        GENERATE_INFOPLIST_FILE: YES
+        TARGETED_DEVICE_FAMILY: "1,2"
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+  AquaLogMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources: [AquaLog]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.aqualog.macos
+        SWIFT_VERSION: "5.9"
+        GENERATE_INFOPLIST_FILE: YES

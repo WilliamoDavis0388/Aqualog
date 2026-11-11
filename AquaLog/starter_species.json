@@ -1,0 +1,210 @@
+[
+  {
+    "id": "neocaridina-davidi",
+    "commonName": "Cherry Shrimp",
+    "scientificName": "Neocaridina davidi",
+    "group": "Shrimp",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 18,
+        "maximum": 26
+      },
+      "ph": {
+        "minimum": 6.5,
+        "maximum": 8
+      },
+      "gh": {
+        "minimum": 5,
+        "maximum": 12
+      },
+      "kh": {
+        "minimum": 2,
+        "maximum": 8
+      },
+      "tds": {
+        "minimum": 150,
+        "maximum": 300
+      }
+    },
+    "minimumGallons": 5,
+    "minimumGroup": null,
+    "referenceVerified": false
+  },
+  {
+    "id": "caridina-logemanni",
+    "commonName": "Crystal Red Shrimp",
+    "scientificName": "Caridina logemanni",
+    "group": "Shrimp",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 19,
+        "maximum": 23
+      },
+      "ph": {
+        "minimum": 5.5,
+        "maximum": 6.6
+      },
+      "gh": {
+        "minimum": 4,
+        "maximum": 6
+      },
+      "kh": {
+        "minimum": 0,
+        "maximum": 2
+      }
+    },
+    "minimumGallons": 5,
+    "minimumGroup": null,
+    "referenceVerified": false
+  },
+  {
+    "id": "betta-splendens",
+    "commonName": "Betta splendens",
+    "scientificName": "Betta splendens",
+    "group": "Fish",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 24,
+        "maximum": 28
+      },
+      "ph": {
+        "minimum": 6.5,
+        "maximum": 7.8
+      }
+    },
+    "minimumGallons": 5,
+    "minimumGroup": null,
+    "referenceVerified": false
+  },
+  {
+    "id": "poecilia-reticulata",
+    "commonName": "Guppy",
+    "scientificName": "Poecilia reticulata",
+    "group": "Fish",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 22,
+        "maximum": 28
+      },
+      "ph": {
+        "minimum": 7,
+        "maximum": 8.5
+      },
+      "gh": {
+        "minimum": 8,
+        "maximum": 20
+      }
+    },
+    "minimumGallons": 10,
+    "minimumGroup": 5,
+    "referenceVerified": false
+  },
+  {
+    "id": "paracheirodon-innesi",
+    "commonName": "Neon Tetra",
+    "scientificName": "Paracheirodon innesi",
+    "group": "Fish",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 21,
+        "maximum": 26
+      },
+      "ph": {
+        "minimum": 5.5,
+        "maximum": 7.5
+      },
+      "gh": {
+        "minimum": 1,
+        "maximum": 10
+      }
+    },
+    "minimumGallons": 15,
+    "minimumGroup": 8,
+    "referenceVerified": false
+  },
+  {
+    "id": "corydoras-pygmaeus",
+    "commonName": "Pygmy Cory",
+    "scientificName": "Corydoras pygmaeus",
+    "group": "Fish",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 22,
+        "maximum": 26
+      },
+      "ph": {
+        "minimum": 6,
+        "maximum": 7.5
+      },
+      "gh": {
+        "minimum": 2,
+        "maximum": 12
+      }
+    },
+    "minimumGallons": 10,
+    "minimumGroup": 8,
+    "referenceVerified": false
+  },
+  {
+    "id": "caridina-dennerli",
+    "commonName": "Cardinal Sulawesi Shrimp",
+    "scientificName": "Caridina dennerli",
+    "group": "Shrimp",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 27,
+        "maximum": 30
+      },
+      "ph": {
+        "minimum": 7.8,
+        "maximum": 8.5
+      },
+      "gh": {
+        "minimum": 4,
+        "maximum": 8
+      },
+      "kh": {
+        "minimum": 3,
+        "maximum": 7
+      }
+    },
+    "minimumGallons": 10,
+    "minimumGroup": null,
+    "referenceVerified": false
+  },
+  {
+    "id": "neritina-trade",
+    "commonName": "Nerite Snail",
+    "scientificName": "Neritidae (trade group)",
+    "group": "Aquatic snail",
+    "waterType": "freshwater",
+    "ranges": {
+      "temperatureC": {
+        "minimum": 22,
+        "maximum": 28
+      },
+      "ph": {
+        "minimum": 7,
+        "maximum": 8.5
+      },
+      "gh": {
+        "minimum": 6,
+        "maximum": 15
+      },
+      "kh": {
+        "minimum": 3,
+        "maximum": 10
+      }
+    },
+    "minimumGallons": 5,
+    "minimumGroup": null,
+    "referenceVerified": false
+  }
+]
